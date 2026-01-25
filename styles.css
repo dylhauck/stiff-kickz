@@ -548,3 +548,6 @@ h1{
   .product-grid{ grid-template-columns: 1fr; }
   .pcard-media{ height: 200px; }
 }
+
+/* If you decide badges are "too much", this disables them globally */
+.badge{ display:none; }
