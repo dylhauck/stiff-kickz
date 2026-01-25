@@ -73,18 +73,19 @@ img{ max-width:100%; display:block; }
   text-transform: uppercase;
 }
 
-/* Brand logo */
+/* Brand logo image */
 .brand-logo{
   height: 52px;
   width: auto;
-  display:block;
-  object-fit:contain;
+  display: block;
+  object-fit: contain;
   filter:
-    drop-shadow(0 0 6px rgba(177,18,38,.55))
-    drop-shadow(0 0 14px rgba(177,18,38,.35));
+    drop-shadow(0 0 6px rgba(177, 18, 38, 0.55))
+    drop-shadow(0 0 14px rgba(177, 18, 38, 0.35));
 }
-@media (max-width:560px){
-  .brand-logo{ height:40px; }
+
+@media (max-width: 560px){
+  .brand-logo{ height: 40px; }
 }
 
 .navlinks{
@@ -92,6 +93,7 @@ img{ max-width:100%; display:block; }
   align-items:center;
   gap: 18px;
   flex-wrap: wrap;
+  justify-content:flex-end;
 }
 
 .navlinks a{
@@ -112,160 +114,134 @@ img{ max-width:100%; display:block; }
   position:absolute;
   left:6px;
   right:6px;
-  bottom:4px;
-  height:2px;
-  background:var(--red);
-  border-radius:99px;
+  bottom: 4px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 99px;
 }
-
-/* --- Sections --- */
-.section{ padding:26px 0 40px; }
-.page-title{
-  padding:26px 0 10px;
-}
-.page-title h1{ margin:0; font-size:28px; }
-.page-title p{ margin-top:8px; color:var(--muted); }
 
 /* =========================
-   PRODUCT CARDS
+   PRODUCT CARDS (Option B)
    ========================= */
 
 .product-grid{
   display:grid;
-  grid-template-columns: repeat(4,1fr);
-  gap:14px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
 }
 
 .pcard{
-  border:1px solid var(--border);
+  border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-  border-radius:var(--radius);
+  border-radius: var(--radius);
   overflow:hidden;
-  box-shadow:0 12px 40px rgba(0,0,0,.30);
-  transition: transform .18s ease, border-color .18s ease;
-}
-.pcard:hover{
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,.18);
+  box-shadow: 0 12px 40px rgba(0,0,0,.30);
 }
 
-/* Image area */
 .pcard-media{
-  position:relative;
-  height:220px;
-  border-bottom:1px solid var(--border);
-  background:
-    radial-gradient(260px 160px at 35% 30%, rgba(177,18,38,.20), transparent 60%),
-    radial-gradient(300px 180px at 85% 40%, rgba(138,138,138,.18), transparent 65%),
-    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  position: relative;
+  height: 220px;
+  border-bottom: 1px solid var(--border);
 }
 
-/* ✅ SINGLE IMAGE ONLY (NO HOVER / NO ANGLE) */
+/* ✅ SINGLE IMAGE — NO HOVER / NO ANGLE */
 .pcard-img{
   position:absolute;
   inset:0;
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-/* Hover actions */
+/* Hover actions stay */
 .pcard-actions{
   position:absolute;
-  left:12px;
-  right:12px;
-  bottom:12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
   display:flex;
-  gap:10px;
-  opacity:0;
+  gap: 10px;
+  opacity: 0;
   transform: translateY(6px);
   transition: opacity .18s ease, transform .18s ease;
 }
 .pcard:hover .pcard-actions{
-  opacity:1;
+  opacity: 1;
   transform: translateY(0);
 }
-.pcard-actions a{
-  flex:1;
-  padding:10px;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,.14);
-  background: rgba(0,0,0,.35);
-  font-size:12px;
-  font-weight:800;
-  text-align:center;
-  letter-spacing:.05em;
-  text-transform:uppercase;
-}
-.pcard-actions a.primary{
-  background: linear-gradient(135deg, rgba(177,18,38,.95), rgba(177,18,38,.35));
-  border-color: rgba(177,18,38,.65);
+
+.pcard-body{
+  padding: 14px;
+  display:grid;
+  gap: 10px;
 }
 
-/* Body */
-.pcard-body{
-  padding:14px;
-  display:grid;
-  gap:10px;
-}
-.pcard-top{
-  display:flex;
-  justify-content:space-between;
-}
 .pname{
-  font-size:13px;
-  font-weight:900;
+  margin:0;
+  font-size: 13px;
+  font-weight: 900;
   letter-spacing:.04em;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
+
 .price{ font-weight:900; }
 
 .psub{
-  color:var(--muted);
-  font-size:13px;
+  margin:0;
+  color: var(--muted);
+  font-size: 13px;
 }
 
-/* Swatches */
+/* Swatches — FULL COLOR SYSTEM INTACT */
 .swatches{
   display:flex;
-  gap:8px;
-  flex-wrap:wrap;
+  gap: 8px;
+  align-items:center;
+  flex-wrap: wrap;
 }
 .swatch{
-  width:16px;
-  height:16px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.18);
-  flex:0 0 auto;
+  display:inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.18);
+  flex: 0 0 auto;
 }
+
 .swatch.black{ background:#0b0b0b; }
 .swatch.red{ background:#b11226; }
 .swatch.lime{ background:#b6ff00; }
-
-/* Sizes */
-.sizes{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-}
-.sizechip{
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.12);
-  background: rgba(0,0,0,.20);
-  font-size:11px;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  color:var(--muted);
-}
+.swatch.gray{ background:#8a8a8a; }
+.swatch.gunmetal{ background:#2b2b2b; }
+.swatch.white{ background:#f5f5f5; border:1px solid #ccc; }
+.swatch.tan{ background:#c2b280; }
+.swatch.olive{ background:#556b2f; }
+.swatch.sand{ background:#d6cfc4; }
+.swatch.blue{ background:#1f4fff; }
+.swatch.navy{ background:#0a1a33; }
+.swatch.sky{ background:#4da3ff; }
+.swatch.purple{ background:#5a2d82; }
+.swatch.violet{ background:#7f3fbf; }
+.swatch.orange{ background:#ff6a00; }
+.swatch.gold{ background:#d4af37; }
+.swatch.yellow{ background:#ffd400; }
+.swatch.forest{ background:#1f3d2b; }
+.swatch.mint{ background:#4dd6b0; }
+.swatch.maroon{ background:#5c0f1a; }
+.swatch.crimson{ background:#8e1b2d; }
+.swatch.lightgray{ background:#d1d1d1; }
+.swatch.darkgray{ background:#444444; }
+.swatch.bronze{ background:#8c6239; }
+.swatch.copper{ background:#b87333; }
+.swatch.ice{ background:#e6f7ff; border:1px solid #ccefff; }
 
 /* Responsive */
-@media (max-width:980px){
-  .product-grid{ grid-template-columns: repeat(2,1fr); }
+@media (max-width: 980px){
+  .product-grid{ grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width:560px){
+@media (max-width: 560px){
   .product-grid{ grid-template-columns: 1fr; }
-  .pcard-media{ height:200px; }
+  .pcard-media{ height: 200px; }
 }
 
 /* Disable badges globally */
