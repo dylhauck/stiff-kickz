@@ -72,6 +72,19 @@ img{ max-width:100%; display:block; }
   letter-spacing:.08em;
   text-transform: uppercase;
 }
+
+/* NEW: Brand logo image (stiffkickz.png) */
+.brand-logo{
+  height: 34px;          /* matches old badge height */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+/* Optional: slightly bigger on desktop (safe) */
+@media (min-width: 768px){
+  .brand-logo{ height: 38px; }
+}
+
 .brand-badge{
   width: 34px;
   height: 34px;
