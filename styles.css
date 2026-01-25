@@ -75,7 +75,7 @@ img{ max-width:100%; display:block; }
 
 /* NEW: Brand logo image (stiffkickz.png) */
 .brand-logo{
-  height: 34px;          /* matches old badge height */
+  height: 42px;          /* matches old badge height */
   width: auto;
   display: block;
   object-fit: contain;
