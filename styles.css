@@ -73,16 +73,19 @@ img{ max-width:100%; display:block; }
   text-transform: uppercase;
 }
 
-/* NEW: Brand logo image (stiffkickz.png) */
+/* Brand logo image (stiffkickz-transparent.png) */
 .brand-logo{
-  height: 42px;          /* matches old badge height */
+  height: 52px;          /* 🔥 bigger, bold presence */
   width: auto;
   display: block;
   object-fit: contain;
 }
-/* Optional: slightly bigger on desktop (safe) */
-@media (min-width: 768px){
-  .brand-logo{ height: 38px; }
+
+/* Slightly smaller on mobile so nav stays clean */
+@media (max-width: 560px){
+  .brand-logo{
+    height: 40px;
+  }
 }
 
 .brand-badge{
