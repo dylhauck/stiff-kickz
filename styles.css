@@ -79,6 +79,11 @@ img{ max-width:100%; display:block; }
   width: auto;
   display: block;
   object-fit: contain;
+
+/* 🔥 Red glow */
+filter:
+   drop-shadow(0 0 6px rgba(177, 18, 38, 0.55))
+   drop-shadow(0 0 14px rgba(177, 18, 38, 0.35));
 }
 
 /* Slightly smaller on mobile so nav stays clean */
