@@ -551,3 +551,53 @@ h1{
 
 /* If you decide badges are "too much", this disables them globally */
 .badge{ display:none; }
+
+/* =========================
+   COLOR SWATCH SYSTEM
+   ========================= */
+
+/* Core / Always Available */
+.swatch.black    { background:#0b0b0b; }
+.swatch.red      { background:#b11226; }
+.swatch.lime     { background:#b6ff00; }
+
+/* Neutrals / Pro */
+.swatch.gray     { background:#8a8a8a; }
+.swatch.gunmetal { background:#2b2b2b; }
+.swatch.white    { background:#f5f5f5; border:1px solid #ccc; }
+
+/* Tactical / Grit */
+.swatch.tan      { background:#c2b280; }  /* Coyote */
+.swatch.olive    { background:#556b2f; }
+.swatch.sand     { background:#d6cfc4; }
+
+/* Blues */
+.swatch.blue     { background:#1f4fff; }  /* Royal */
+.swatch.navy     { background:#0a1a33; }
+.swatch.sky      { background:#4da3ff; }
+
+/* Purples */
+.swatch.purple   { background:#5a2d82; }
+.swatch.violet   { background:#7f3fbf; }
+
+/* Oranges / Yellows */
+.swatch.orange   { background:#ff6a00; }
+.swatch.gold     { background:#d4af37; }
+.swatch.yellow   { background:#ffd400; }
+
+/* Greens */
+.swatch.forest   { background:#1f3d2b; }
+.swatch.mint     { background:#4dd6b0; }
+
+/* Reds (variants) */
+.swatch.maroon   { background:#5c0f1a; }
+.swatch.crimson  { background:#8e1b2d; }
+
+/* Grayscale Range */
+.swatch.lightgray{ background:#d1d1d1; }
+.swatch.darkgray { background:#444444; }
+
+/* Specialty / Limited Drops */
+.swatch.bronze   { background:#8c6239; }
+.swatch.copper   { background:#b87333; }
+.swatch.ice      { background:#e6f7ff; border:1px solid #ccefff; }
