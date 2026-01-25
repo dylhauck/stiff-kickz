@@ -87,60 +87,75 @@ img{ max-width:100%; display:block; }
 }
 
 /* Flicker animation (subtle, premium) */
+/* More noticeable flicker (still premium) */
 .brand-logo.flicker{
-  animation: boltFlicker 5.5s infinite;
+  animation: boltFlicker 4.2s infinite;
   will-change: filter, opacity, transform;
 }
 
 @keyframes boltFlicker{
-  /* calm baseline */
-  0%, 18%, 22%, 58%, 100%{
+  /* steady baseline */
+  0%, 14%, 18%, 52%, 100%{
     opacity: 1;
     transform: translateY(0);
     filter:
+      drop-shadow(0 0 8px rgba(177, 18, 38, 0.65))
+      drop-shadow(0 0 18px rgba(177, 18, 38, 0.42));
+  }
+
+  /* quick dip */
+  15%{
+    opacity: .78;
+    filter:
+      drop-shadow(0 0 3px rgba(177, 18, 38, 0.18))
+      drop-shadow(0 0 8px rgba(177, 18, 38, 0.12));
+  }
+
+  /* HARD HIT */
+  16%{
+    opacity: 1;
+    transform: translateY(-1px);
+    filter:
+      drop-shadow(0 0 14px rgba(177, 18, 38, 1))
+      drop-shadow(0 0 34px rgba(177, 18, 38, 0.75))
+      drop-shadow(0 0 60px rgba(177, 18, 38, 0.35));
+  }
+
+  /* micro stutter */
+  16.6%{
+    opacity: .88;
+    filter:
       drop-shadow(0 0 6px rgba(177, 18, 38, 0.55))
-      drop-shadow(0 0 14px rgba(177, 18, 38, 0.35));
-  }
-
-  /* micro flicker burst */
-  19%{
-    opacity: .92;
-    filter:
-      drop-shadow(0 0 4px rgba(177, 18, 38, 0.35))
-      drop-shadow(0 0 10px rgba(177, 18, 38, 0.20));
-  }
-  20%{
-    opacity: 1;
-    filter:
-      drop-shadow(0 0 10px rgba(177, 18, 38, 0.90))
-      drop-shadow(0 0 26px rgba(177, 18, 38, 0.55))
-      drop-shadow(0 0 44px rgba(177, 18, 38, 0.22));
-  }
-  21%{
-    opacity: .96;
-    filter:
-      drop-shadow(0 0 7px rgba(177, 18, 38, 0.70))
-      drop-shadow(0 0 18px rgba(177, 18, 38, 0.40));
-  }
-
-  /* second smaller hit later */
-  60%{
-    opacity: .95;
-    filter:
-      drop-shadow(0 0 5px rgba(177, 18, 38, 0.45))
-      drop-shadow(0 0 12px rgba(177, 18, 38, 0.25));
-  }
-  61%{
-    opacity: 1;
-    filter:
-      drop-shadow(0 0 11px rgba(177, 18, 38, 0.95))
-      drop-shadow(0 0 28px rgba(177, 18, 38, 0.60));
-  }
-  62%{
-    opacity: .98;
-    filter:
-      drop-shadow(0 0 7px rgba(177, 18, 38, 0.65))
       drop-shadow(0 0 16px rgba(177, 18, 38, 0.38));
+  }
+  17.2%{
+    opacity: 1;
+    filter:
+      drop-shadow(0 0 12px rgba(177, 18, 38, 1))
+      drop-shadow(0 0 30px rgba(177, 18, 38, 0.65));
+  }
+
+  /* second burst later */
+  54%{
+    opacity: .8;
+    filter:
+      drop-shadow(0 0 4px rgba(177, 18, 38, 0.25))
+      drop-shadow(0 0 10px rgba(177, 18, 38, 0.18));
+  }
+  55%{
+    opacity: 1;
+    transform: translateY(-1px);
+    filter:
+      drop-shadow(0 0 16px rgba(177, 18, 38, 1))
+      drop-shadow(0 0 38px rgba(177, 18, 38, 0.78))
+      drop-shadow(0 0 70px rgba(177, 18, 38, 0.40));
+  }
+  56%{
+    opacity: .92;
+    transform: translateY(0);
+    filter:
+      drop-shadow(0 0 8px rgba(177, 18, 38, 0.65))
+      drop-shadow(0 0 18px rgba(177, 18, 38, 0.42));
   }
 }
 
