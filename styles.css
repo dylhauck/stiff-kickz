@@ -561,6 +561,6 @@ h1{
 /* Disable badges globally */
 .badge{ display:none; }
 
-// Visual active state for swatches
+/* Visual active state for swatches */
 card.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
 swatch.classList.add('active');
