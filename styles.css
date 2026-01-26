@@ -561,6 +561,45 @@ h1{
 /* Disable badges globally */
 .badge{ display:none; }
 
-/* Visual active state for swatches */
-card.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
-swatch.classList.add('active');
+/* =========================
+   ACTIVE SWATCH STATE
+   ========================= */
+
+.swatch{
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+
+.swatch:hover{
+  transform: scale(1.08);
+}
+
+/* selected color */
+.swatch.active{
+  border-color: rgba(255,255,255,.9);
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,.85),
+    0 0 10px rgba(177,18,38,.55);
+}
+
+/* =========================
+   SIZE CHIP STYLING
+   ========================= */
+
+.sizechip{
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.18);
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.sizechip:hover{
+  border-color: rgba(255,255,255,.35);
+  color: var(--text);
+}
+
+/* optional selected state (for later JS) */
+.sizechip.active{
+  border-color: rgba(177,18,38,.8);
+  background: rgba(177,18,38,.15);
+  color: var(--text);
+}
