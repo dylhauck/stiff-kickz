@@ -395,7 +395,7 @@ h1{
 
 .pcard-media{
   position: relative;
-  height: 220px;
+  height: 340px;
   border-bottom: 1px solid var(--border);
   background:
     radial-gradient(260px 160px at 35% 30%, rgba(177,18,38,.20), transparent 60%),
