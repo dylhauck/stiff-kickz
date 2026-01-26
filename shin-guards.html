@@ -324,7 +324,6 @@
 <script>
   // Swatches -> Image swap (per product card)
   // Uses: assets/<data-base>-<color>.png
-  // Example: data-base="pro-impact-front" + color="black" => assets/pro-impact-front-black.png
   document.querySelectorAll('.pcard').forEach(card => {
     const img = card.querySelector('.pcard-img');
     if (!img) return;
@@ -334,22 +333,40 @@
 
     const defaultSrc = img.getAttribute('src');
 
-    card.querySelectorAll('.swatch[data-color]').forEach(swatch => {
+    const swatches = card.querySelectorAll('.swatch[data-color]');
+
+    swatches.forEach(swatch => {
       swatch.addEventListener('click', () => {
         const color = swatch.dataset.color;
         if (!color) return;
 
         const nextSrc = `assets/${base}-${color}.png`;
 
-        // Try to load first; if missing, keep current image (or default)
+        // Try to load first; if missing, keep current image
         const test = new Image();
         test.onload = () => { img.src = nextSrc; };
         test.onerror = () => {
-          // If you want a hard fallback to default image, uncomment:
+          // optional fallback
           // img.src = defaultSrc;
         };
         test.src = nextSrc;
+
+        /* ✅ NEW: active swatch state */
+        swatches.forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
       });
+    });
+
+    /* ✅ OPTIONAL: auto-select first color on load */
+    swatches[0]?.classList.add('active');
+  });
+
+  /* ✅ OPTIONAL: size chip visual toggle */
+  document.querySelectorAll('.sizechip').forEach(size => {
+    size.addEventListener('click', () => {
+      const group = size.parentElement.querySelectorAll('.sizechip');
+      group.forEach(s => s.classList.remove('active'));
+      size.classList.add('active');
     });
   });
 </script>
