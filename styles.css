@@ -603,3 +603,17 @@ h1{
   background: rgba(177,18,38,.15);
   color: var(--text);
 }
+
+/* Support JS using .is-active (recommended) */
+.swatch.is-active{
+  border-color: rgba(255,255,255,.9);
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,.85),
+    0 0 10px rgba(177,18,38,.55);
+}
+
+.sizechip.is-active{
+  border-color: rgba(177,18,38,.8);
+  background: rgba(177,18,38,.15);
+  color: var(--text);
+}
