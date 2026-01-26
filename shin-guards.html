@@ -38,20 +38,24 @@
     <section class="section" style="padding-top:14px;">
       <div class="section-header">
         <h2>All Shin Guards</h2>
-        <p>Tap colors to swap (we’ll add the photos after).</p>
+        <p>Tap a color to preview (photos can be added later).</p>
       </div>
 
+      <!-- OPTION B: Sub•Urban-style product grid -->
       <div class="product-grid">
 
         <!-- PRO IMPACT -->
-        <article class="pcard" data-product-key="pro-impact">
+        <article class="pcard">
           <div class="pcard-media">
             <span class="badge red">Best Seller</span>
 
-            <img class="pcard-img main"
-                 src="assets/pro-impact-front-black.png"
-                 alt="Pro Impact Shin Guards (front)"
-                 data-role="product-image" />
+            <!-- data-base controls the filename prefix used by JS -->
+            <img
+              class="pcard-img main"
+              src="assets/pro-impact-front-black.png"
+              data-base="pro-impact-front"
+              alt="Pro Impact Shin Guards (front)"
+            />
 
             <div class="pcard-actions">
               <a href="contact.html">Ask</a>
@@ -67,33 +71,33 @@
 
             <p class="psub">Locked fit • balanced padding • stays put in scrambles</p>
 
-            <div class="swatches" aria-label="Available colors" data-role="swatch-row">
-              <span class="swatch black" title="Matte Black" data-color="black" role="button" tabindex="0" aria-pressed="true"></span>
-              <span class="swatch red" title="Blood Red" data-color="red" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lime" title="Electric Lime" data-color="lime" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gray" title="Steel Gray" data-color="gray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gunmetal" title="Gunmetal" data-color="gunmetal" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch white" title="Ice White" data-color="white" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch tan" title="Coyote Tan" data-color="tan" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch olive" title="Olive Drab" data-color="olive" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sand" title="Sand" data-color="sand" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch blue" title="Royal Blue" data-color="blue" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch navy" title="Navy" data-color="navy" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sky" title="Sky Blue" data-color="sky" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch purple" title="Deep Purple" data-color="purple" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch violet" title="Violet" data-color="violet" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch orange" title="Blaze Orange" data-color="orange" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gold" title="Gold" data-color="gold" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch yellow" title="Yellow" data-color="yellow" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch forest" title="Forest Green" data-color="forest" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch mint" title="Mint" data-color="mint" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch maroon" title="Maroon" data-color="maroon" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch crimson" title="Crimson" data-color="crimson" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lightgray" title="Light Gray" data-color="lightgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch darkgray" title="Dark Gray" data-color="darkgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch bronze" title="Bronze" data-color="bronze" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch copper" title="Copper" data-color="copper" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch ice" title="Ice" data-color="ice" role="button" tabindex="0" aria-pressed="false"></span>
+            <div class="swatches" aria-label="Available colors">
+              <span class="swatch black"    data-color="black"    title="Matte Black"></span>
+              <span class="swatch red"      data-color="red"      title="Blood Red"></span>
+              <span class="swatch lime"     data-color="lime"     title="Electric Lime"></span>
+              <span class="swatch gray"     data-color="gray"     title="Steel Gray"></span>
+              <span class="swatch gunmetal" data-color="gunmetal" title="Gunmetal"></span>
+              <span class="swatch white"    data-color="white"    title="Ice White"></span>
+              <span class="swatch tan"      data-color="tan"      title="Coyote Tan"></span>
+              <span class="swatch olive"    data-color="olive"    title="Olive Drab"></span>
+              <span class="swatch sand"     data-color="sand"     title="Sand"></span>
+              <span class="swatch blue"     data-color="blue"     title="Royal Blue"></span>
+              <span class="swatch navy"     data-color="navy"     title="Navy"></span>
+              <span class="swatch sky"      data-color="sky"      title="Sky Blue"></span>
+              <span class="swatch purple"   data-color="purple"   title="Deep Purple"></span>
+              <span class="swatch violet"   data-color="violet"   title="Violet"></span>
+              <span class="swatch orange"   data-color="orange"   title="Blaze Orange"></span>
+              <span class="swatch gold"     data-color="gold"     title="Gold"></span>
+              <span class="swatch yellow"   data-color="yellow"   title="Yellow"></span>
+              <span class="swatch forest"   data-color="forest"   title="Forest Green"></span>
+              <span class="swatch mint"     data-color="mint"     title="Mint"></span>
+              <span class="swatch maroon"   data-color="maroon"   title="Maroon"></span>
+              <span class="swatch crimson"  data-color="crimson"  title="Crimson"></span>
+              <span class="swatch lightgray"data-color="lightgray"title="Light Gray"></span>
+              <span class="swatch darkgray" data-color="darkgray" title="Dark Gray"></span>
+              <span class="swatch bronze"   data-color="bronze"   title="Bronze"></span>
+              <span class="swatch copper"   data-color="copper"   title="Copper"></span>
+              <span class="swatch ice"      data-color="ice"      title="Ice"></span>
             </div>
 
             <div class="sizes" aria-label="Available sizes">
@@ -106,14 +110,16 @@
         </article>
 
         <!-- COMPETITION FIT -->
-        <article class="pcard" data-product-key="competition-fit">
+        <article class="pcard">
           <div class="pcard-media">
             <span class="badge">Low Profile</span>
 
-            <img class="pcard-img main"
-                 src="assets/products/competition-fit-1.jpg"
-                 alt="Competition Fit Shin Guards (front)"
-                 data-role="product-image" />
+            <img
+              class="pcard-img main"
+              src="assets/products/competition-fit-1.jpg"
+              data-base="competition-fit-front"
+              alt="Competition Fit Shin Guards (front)"
+            />
 
             <div class="pcard-actions">
               <a href="contact.html">Ask</a>
@@ -129,33 +135,33 @@
 
             <p class="psub">Slim profile • secure strap • comp-ready feel</p>
 
-            <div class="swatches" aria-label="Available colors" data-role="swatch-row">
-              <span class="swatch black" title="Matte Black" data-color="black" role="button" tabindex="0" aria-pressed="true"></span>
-              <span class="swatch red" title="Blood Red" data-color="red" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lime" title="Electric Lime" data-color="lime" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gray" title="Steel Gray" data-color="gray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gunmetal" title="Gunmetal" data-color="gunmetal" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch white" title="Ice White" data-color="white" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch tan" title="Coyote Tan" data-color="tan" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch olive" title="Olive Drab" data-color="olive" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sand" title="Sand" data-color="sand" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch blue" title="Royal Blue" data-color="blue" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch navy" title="Navy" data-color="navy" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sky" title="Sky Blue" data-color="sky" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch purple" title="Deep Purple" data-color="purple" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch violet" title="Violet" data-color="violet" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch orange" title="Blaze Orange" data-color="orange" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gold" title="Gold" data-color="gold" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch yellow" title="Yellow" data-color="yellow" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch forest" title="Forest Green" data-color="forest" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch mint" title="Mint" data-color="mint" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch maroon" title="Maroon" data-color="maroon" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch crimson" title="Crimson" data-color="crimson" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lightgray" title="Light Gray" data-color="lightgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch darkgray" title="Dark Gray" data-color="darkgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch bronze" title="Bronze" data-color="bronze" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch copper" title="Copper" data-color="copper" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch ice" title="Ice" data-color="ice" role="button" tabindex="0" aria-pressed="false"></span>
+            <div class="swatches" aria-label="Available colors">
+              <span class="swatch black"    data-color="black"    title="Matte Black"></span>
+              <span class="swatch red"      data-color="red"      title="Blood Red"></span>
+              <span class="swatch lime"     data-color="lime"     title="Electric Lime"></span>
+              <span class="swatch gray"     data-color="gray"     title="Steel Gray"></span>
+              <span class="swatch gunmetal" data-color="gunmetal" title="Gunmetal"></span>
+              <span class="swatch white"    data-color="white"    title="Ice White"></span>
+              <span class="swatch tan"      data-color="tan"      title="Coyote Tan"></span>
+              <span class="swatch olive"    data-color="olive"    title="Olive Drab"></span>
+              <span class="swatch sand"     data-color="sand"     title="Sand"></span>
+              <span class="swatch blue"     data-color="blue"     title="Royal Blue"></span>
+              <span class="swatch navy"     data-color="navy"     title="Navy"></span>
+              <span class="swatch sky"      data-color="sky"      title="Sky Blue"></span>
+              <span class="swatch purple"   data-color="purple"   title="Deep Purple"></span>
+              <span class="swatch violet"   data-color="violet"   title="Violet"></span>
+              <span class="swatch orange"   data-color="orange"   title="Blaze Orange"></span>
+              <span class="swatch gold"     data-color="gold"     title="Gold"></span>
+              <span class="swatch yellow"   data-color="yellow"   title="Yellow"></span>
+              <span class="swatch forest"   data-color="forest"   title="Forest Green"></span>
+              <span class="swatch mint"     data-color="mint"     title="Mint"></span>
+              <span class="swatch maroon"   data-color="maroon"   title="Maroon"></span>
+              <span class="swatch crimson"  data-color="crimson"  title="Crimson"></span>
+              <span class="swatch lightgray"data-color="lightgray"title="Light Gray"></span>
+              <span class="swatch darkgray" data-color="darkgray" title="Dark Gray"></span>
+              <span class="swatch bronze"   data-color="bronze"   title="Bronze"></span>
+              <span class="swatch copper"   data-color="copper"   title="Copper"></span>
+              <span class="swatch ice"      data-color="ice"      title="Ice"></span>
             </div>
 
             <div class="sizes" aria-label="Available sizes">
@@ -168,14 +174,16 @@
         </article>
 
         <!-- TRAINING GUARD -->
-        <article class="pcard" data-product-key="training-guard">
+        <article class="pcard">
           <div class="pcard-media">
             <span class="badge">Everyday</span>
 
-            <img class="pcard-img main"
-                 src="assets/products/training-guard-1.jpg"
-                 alt="Training Guard Shin Guards (front)"
-                 data-role="product-image" />
+            <img
+              class="pcard-img main"
+              src="assets/products/training-guard-1.jpg"
+              data-base="training-guard-front"
+              alt="Training Guard Shin Guards (front)"
+            />
 
             <div class="pcard-actions">
               <a href="contact.html">Ask</a>
@@ -191,33 +199,33 @@
 
             <p class="psub">Daily reps • flexible feel • reliable coverage</p>
 
-            <div class="swatches" aria-label="Available colors" data-role="swatch-row">
-              <span class="swatch black" title="Matte Black" data-color="black" role="button" tabindex="0" aria-pressed="true"></span>
-              <span class="swatch red" title="Blood Red" data-color="red" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lime" title="Electric Lime" data-color="lime" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gray" title="Steel Gray" data-color="gray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gunmetal" title="Gunmetal" data-color="gunmetal" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch white" title="Ice White" data-color="white" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch tan" title="Coyote Tan" data-color="tan" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch olive" title="Olive Drab" data-color="olive" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sand" title="Sand" data-color="sand" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch blue" title="Royal Blue" data-color="blue" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch navy" title="Navy" data-color="navy" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sky" title="Sky Blue" data-color="sky" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch purple" title="Deep Purple" data-color="purple" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch violet" title="Violet" data-color="violet" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch orange" title="Blaze Orange" data-color="orange" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gold" title="Gold" data-color="gold" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch yellow" title="Yellow" data-color="yellow" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch forest" title="Forest Green" data-color="forest" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch mint" title="Mint" data-color="mint" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch maroon" title="Maroon" data-color="maroon" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch crimson" title="Crimson" data-color="crimson" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lightgray" title="Light Gray" data-color="lightgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch darkgray" title="Dark Gray" data-color="darkgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch bronze" title="Bronze" data-color="bronze" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch copper" title="Copper" data-color="copper" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch ice" title="Ice" data-color="ice" role="button" tabindex="0" aria-pressed="false"></span>
+            <div class="swatches" aria-label="Available colors">
+              <span class="swatch black"    data-color="black"    title="Matte Black"></span>
+              <span class="swatch red"      data-color="red"      title="Blood Red"></span>
+              <span class="swatch lime"     data-color="lime"     title="Electric Lime"></span>
+              <span class="swatch gray"     data-color="gray"     title="Steel Gray"></span>
+              <span class="swatch gunmetal" data-color="gunmetal" title="Gunmetal"></span>
+              <span class="swatch white"    data-color="white"    title="Ice White"></span>
+              <span class="swatch tan"      data-color="tan"      title="Coyote Tan"></span>
+              <span class="swatch olive"    data-color="olive"    title="Olive Drab"></span>
+              <span class="swatch sand"     data-color="sand"     title="Sand"></span>
+              <span class="swatch blue"     data-color="blue"     title="Royal Blue"></span>
+              <span class="swatch navy"     data-color="navy"     title="Navy"></span>
+              <span class="swatch sky"      data-color="sky"      title="Sky Blue"></span>
+              <span class="swatch purple"   data-color="purple"   title="Deep Purple"></span>
+              <span class="swatch violet"   data-color="violet"   title="Violet"></span>
+              <span class="swatch orange"   data-color="orange"   title="Blaze Orange"></span>
+              <span class="swatch gold"     data-color="gold"     title="Gold"></span>
+              <span class="swatch yellow"   data-color="yellow"   title="Yellow"></span>
+              <span class="swatch forest"   data-color="forest"   title="Forest Green"></span>
+              <span class="swatch mint"     data-color="mint"     title="Mint"></span>
+              <span class="swatch maroon"   data-color="maroon"   title="Maroon"></span>
+              <span class="swatch crimson"  data-color="crimson"  title="Crimson"></span>
+              <span class="swatch lightgray"data-color="lightgray"title="Light Gray"></span>
+              <span class="swatch darkgray" data-color="darkgray" title="Dark Gray"></span>
+              <span class="swatch bronze"   data-color="bronze"   title="Bronze"></span>
+              <span class="swatch copper"   data-color="copper"   title="Copper"></span>
+              <span class="swatch ice"      data-color="ice"      title="Ice"></span>
             </div>
 
             <div class="sizes" aria-label="Available sizes">
@@ -230,14 +238,16 @@
         </article>
 
         <!-- STRAP LOCK -->
-        <article class="pcard" data-product-key="strap-lock">
+        <article class="pcard">
           <div class="pcard-media">
             <span class="badge red">Secure</span>
 
-            <img class="pcard-img main"
-                 src="assets/products/strap-lock-1.jpg"
-                 alt="Strap Lock Shin Guards (front)"
-                 data-role="product-image" />
+            <img
+              class="pcard-img main"
+              src="assets/products/strap-lock-1.jpg"
+              data-base="strap-lock-front"
+              alt="Strap Lock Shin Guards (front)"
+            />
 
             <div class="pcard-actions">
               <a href="contact.html">Ask</a>
@@ -253,33 +263,33 @@
 
             <p class="psub">Extra hold • reduced slip • built for pressure</p>
 
-            <div class="swatches" aria-label="Available colors" data-role="swatch-row">
-              <span class="swatch black" title="Matte Black" data-color="black" role="button" tabindex="0" aria-pressed="true"></span>
-              <span class="swatch red" title="Blood Red" data-color="red" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lime" title="Electric Lime" data-color="lime" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gray" title="Steel Gray" data-color="gray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gunmetal" title="Gunmetal" data-color="gunmetal" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch white" title="Ice White" data-color="white" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch tan" title="Coyote Tan" data-color="tan" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch olive" title="Olive Drab" data-color="olive" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sand" title="Sand" data-color="sand" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch blue" title="Royal Blue" data-color="blue" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch navy" title="Navy" data-color="navy" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch sky" title="Sky Blue" data-color="sky" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch purple" title="Deep Purple" data-color="purple" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch violet" title="Violet" data-color="violet" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch orange" title="Blaze Orange" data-color="orange" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch gold" title="Gold" data-color="gold" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch yellow" title="Yellow" data-color="yellow" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch forest" title="Forest Green" data-color="forest" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch mint" title="Mint" data-color="mint" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch maroon" title="Maroon" data-color="maroon" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch crimson" title="Crimson" data-color="crimson" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch lightgray" title="Light Gray" data-color="lightgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch darkgray" title="Dark Gray" data-color="darkgray" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch bronze" title="Bronze" data-color="bronze" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch copper" title="Copper" data-color="copper" role="button" tabindex="0" aria-pressed="false"></span>
-              <span class="swatch ice" title="Ice" data-color="ice" role="button" tabindex="0" aria-pressed="false"></span>
+            <div class="swatches" aria-label="Available colors">
+              <span class="swatch black"    data-color="black"    title="Matte Black"></span>
+              <span class="swatch red"      data-color="red"      title="Blood Red"></span>
+              <span class="swatch lime"     data-color="lime"     title="Electric Lime"></span>
+              <span class="swatch gray"     data-color="gray"     title="Steel Gray"></span>
+              <span class="swatch gunmetal" data-color="gunmetal" title="Gunmetal"></span>
+              <span class="swatch white"    data-color="white"    title="Ice White"></span>
+              <span class="swatch tan"      data-color="tan"      title="Coyote Tan"></span>
+              <span class="swatch olive"    data-color="olive"    title="Olive Drab"></span>
+              <span class="swatch sand"     data-color="sand"     title="Sand"></span>
+              <span class="swatch blue"     data-color="blue"     title="Royal Blue"></span>
+              <span class="swatch navy"     data-color="navy"     title="Navy"></span>
+              <span class="swatch sky"      data-color="sky"      title="Sky Blue"></span>
+              <span class="swatch purple"   data-color="purple"   title="Deep Purple"></span>
+              <span class="swatch violet"   data-color="violet"   title="Violet"></span>
+              <span class="swatch orange"   data-color="orange"   title="Blaze Orange"></span>
+              <span class="swatch gold"     data-color="gold"     title="Gold"></span>
+              <span class="swatch yellow"   data-color="yellow"   title="Yellow"></span>
+              <span class="swatch forest"   data-color="forest"   title="Forest Green"></span>
+              <span class="swatch mint"     data-color="mint"     title="Mint"></span>
+              <span class="swatch maroon"   data-color="maroon"   title="Maroon"></span>
+              <span class="swatch crimson"  data-color="crimson"  title="Crimson"></span>
+              <span class="swatch lightgray"data-color="lightgray"title="Light Gray"></span>
+              <span class="swatch darkgray" data-color="darkgray" title="Dark Gray"></span>
+              <span class="swatch bronze"   data-color="bronze"   title="Bronze"></span>
+              <span class="swatch copper"   data-color="copper"   title="Copper"></span>
+              <span class="swatch ice"      data-color="ice"      title="Ice"></span>
             </div>
 
             <div class="sizes" aria-label="Available sizes">
@@ -312,69 +322,36 @@
 </footer>
 
 <script>
-  (function () {
-    function buildSrc(productKey, color) {
-      // Naming convention (what we’ll use when you add photos):
-      // assets/<product-key>-front-<color>.png
-      return "assets/" + productKey + "-front-" + color + ".png";
-    }
+  // Swatches -> Image swap (per product card)
+  // Uses: assets/<data-base>-<color>.png
+  // Example: data-base="pro-impact-front" + color="black" => assets/pro-impact-front-black.png
+  document.querySelectorAll('.pcard').forEach(card => {
+    const img = card.querySelector('.pcard-img');
+    if (!img) return;
 
-    function setPressed(container, activeEl) {
-      const swatches = container.querySelectorAll(".swatch[data-color]");
-      swatches.forEach(s => s.setAttribute("aria-pressed", s === activeEl ? "true" : "false"));
-    }
+    const base = img.getAttribute('data-base') || '';
+    if (!base) return;
 
-    function trySwapImage(imgEl, nextSrc) {
-      const prevSrc = imgEl.getAttribute("src");
-      const test = new Image();
-      test.onload = () => { imgEl.setAttribute("src", nextSrc); };
-      test.onerror = () => {
-        // File doesn't exist yet — keep current image, don't break anything.
-        imgEl.setAttribute("src", prevSrc);
-      };
-      test.src = nextSrc;
-    }
+    const defaultSrc = img.getAttribute('src');
 
-    function onSwatchActivate(swatchEl) {
-      const card = swatchEl.closest(".pcard");
-      if (!card) return;
+    card.querySelectorAll('.swatch[data-color]').forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        const color = swatch.dataset.color;
+        if (!color) return;
 
-      const productKey = card.getAttribute("data-product-key");
-      if (!productKey) return;
+        const nextSrc = `assets/${base}-${color}.png`;
 
-      const color = swatchEl.getAttribute("data-color");
-      if (!color) return;
-
-      const img = card.querySelector('img[data-role="product-image"]');
-      if (!img) return;
-
-      // Try to swap to the target image (will only swap if the file exists)
-      const nextSrc = buildSrc(productKey, color);
-      trySwapImage(img, nextSrc);
-
-      // Update pressed state for accessibility
-      const swatchRow = swatchEl.closest('[data-role="swatch-row"]') || card;
-      setPressed(swatchRow, swatchEl);
-    }
-
-    // Click support
-    document.addEventListener("click", function (e) {
-      const swatch = e.target.closest(".swatch[data-color]");
-      if (!swatch) return;
-      onSwatchActivate(swatch);
+        // Try to load first; if missing, keep current image (or default)
+        const test = new Image();
+        test.onload = () => { img.src = nextSrc; };
+        test.onerror = () => {
+          // If you want a hard fallback to default image, uncomment:
+          // img.src = defaultSrc;
+        };
+        test.src = nextSrc;
+      });
     });
-
-    // Keyboard support (Enter / Space)
-    document.addEventListener("keydown", function (e) {
-      const swatch = e.target.closest && e.target.closest(".swatch[data-color]");
-      if (!swatch) return;
-
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        onSwatchActivate(swatch);
-      }
-    });
-  })();
+  });
 </script>
 
 </body>
